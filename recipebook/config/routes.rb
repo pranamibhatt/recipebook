@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
-  get 'recipe/index'
-	resources :recipes
+  get 'recipe/home'
+	resources :recipe
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'recipe#index'
+  root 'recipe#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

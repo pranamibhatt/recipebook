@@ -1,0 +1,21 @@
+<%= form_for :recipe, url: recipe_index_path do |f| %>
+  <p>
+    <%= f.submit 'My Recipe' %><br>
+  </p>
+ 
+  <p>
+    <%= f.submit 'Search Recipes' %><br>
+  </p>
+ 
+  <p>
+    <%= f.submit 'Enter new recipe' , :name => 'new_recipe' %>
+  </p>
+
+  <p>
+    <%= f.submit 'Trial Recipes'%>
+  </p>
+
+  <p>
+    <%= f.submit 'Grocery List'%>
+  </p>
+<% end %>
