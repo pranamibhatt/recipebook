@@ -1,0 +1,34 @@
+<%= form_for :recipe do |f| %>
+  <p>
+    <%= f.label :'Recipe Name' %><br>
+    <%= f.text_field :Name , :readonly => true %>
+  </p>
+ 
+  <p>
+    <%= f.label :Serves %><br>
+    <%= f.text_area :Serves , :readonly => true %>
+  </p>
+ 
+  <p>
+    <%= f.label :Items %><br>
+    <%= f.text_area :Items, :readonly => true %>
+  </p>
+
+  <p>
+    <%= f.label :Instructions %><br>
+    <%= f.text_area :Instructions, :readonly => true  %>
+  </p>
+
+  <p>
+    <%= f.submit 'Add to my recipes'%>
+  </p>
+
+  <p>
+    <%= f.submit 'Add to my trial recipes'%>
+  </p>
+
+  <p>
+    <%= f.submit 'Edit recipe' , :name => 'edit_recipe'%>
+  </p>
+
+<% end %>
