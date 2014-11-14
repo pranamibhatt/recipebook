@@ -1,27 +1,30 @@
+<h1>Welcome to recipebook, your guide to all recipes</h1>
+<h2>Enter the recipe</h2>
+
 <%= form_for :recipe do |f| %>
   <p>
-    <%= f.label :Name %><br>
-    <%= f.text_field :Name %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </p>
  
   <p>
-    <%= f.label :Serving %><br>
-    <%= f.text_area :Serving %>
-  </p>
- 
-  <p>
-    <%= f.label :Item %><br>
-    <%= f.text_area :Item %>
+    <%= f.label :serving %><br>
+    <%= f.text_area :text %>
   </p>
 
-  <p>
-    <%= f.submit 'Add Item' %>
+ <p>
+    <%= f.label :item %><br>
+    <%= f.text_area :string %>
   </p>
 
-  <p>
-    <%= f.label :Instructions %><br>
-    <%= f.text_area :Instructions  %>
+	<p>
+		<%= f.submit 'Add Item'%> 
+	</p>
+ <p>
+    <%= f.label :instructions %><br>
+    <%= f.text_area :text %>
   </p>
+
 
   <p>
     <%= f.submit 'Create Recipe'%>
