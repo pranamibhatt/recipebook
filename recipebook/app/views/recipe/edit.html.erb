@@ -1,22 +1,23 @@
 <h1> Edit Recipe </h1>
+
+<h2> Name </h2>
+<h2> Serves # </h2>
+<h2> Items </h2>
+<h2> Instructions </h2>
+
 <%= form_for :recipe, url: recipe_index_path do |f| %>
-  <p>
-    <%= f.submit 'My Recipe' %><br>
-  </p>
- 
-  <p>
-    <%= f.submit 'Search Recipes' %><br>
-  </p>
- 
-  <p>
-    <%= f.submit 'Enter new recipe' , :name => 'new_recipe' %>
+
+ <p>
+    <%= f.label :item %><br>
+    <%= f.text_field :text %>
   </p>
 
-  <p>
-    <%= f.submit 'Trial Recipes'%>
-  </p>
 
   <p>
-    <%= f.submit 'Grocery List'%>
+    <%= f.submit 'Add Item' %><br>
+  </p>
+ 
+	<p>
+    <%= f.submit 'Finished editing', :name => 'edit_finished' %>
   </p>
 <% end %>
